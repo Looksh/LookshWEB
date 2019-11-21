@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Looksh</title>
+    <link rel="stylesheet" href="basic.css" />
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      table {
+        position: relative;
+        top: 50px;
+        width: 400px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      table,td {
+        border: 1px solid #333;
+        text-align: center;
+}
+
+      thead,tfoot {
+        background-color: #333;
+        color: #fff;
+}
+      td:hover {
+        background-color: aliceblue;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <nav class="header__nav">
+          <div>
+            <img
+              id="logo"
+              src="img/planet.png"
+              alt="logo"
+            />
+          </div>
+          <div class="header__nav__menu">
+            <ul class="header__nav--links">
+              <li><a href="index.html" class="nav--items">HOME</a></li>
+              <li><a href="about.html" class="nav--items">ABOUT</a></li>
+              <li><a href="contact.html" class="nav--items">CONTACT</a></li>
+              <li><a href="project.html" class="nav--items">PROJECT</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="content">
+        <div>
+          <table>
+            <thead>
+                <tr>
+                    <th colspan="3">먹고싶은 음식 리스트</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>탕수육</td>
+                  <td>치킨</td>
+                  <td>마라탕</td>
+                </tr>
+                <tr>
+                  <td>연어덮밥</td>
+                  <td>족발(앞다리)</td>
+                  <td>고르곤졸라피자</td>
+                </tr>
+                <tr>
+                  <td>무뼈닭발, 주먹밥</td>
+                  <td>얼음생맥</td>
+                  <td>갈빗살</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <p></p>
+      </div>
+    </div>
+  </body>
+</html>

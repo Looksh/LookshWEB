@@ -12,8 +12,8 @@ body {
 
 #logo {
   padding: 10px;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
 }
 
 .container > div:nth-child(1n) {
@@ -29,7 +29,7 @@ body {
   display: grid;
   grid-gap: 0px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 60px auto;
+  grid-template-rows: 80px auto;
 }
 
 .header {
@@ -46,14 +46,18 @@ body {
   justify-content: space-between;
 }
 
+.header__nav--img {
+  margin-left: 50px;
+}
+
 .header__nav__menu > ul {
   list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+  margin-right: 50px;
 }
 
 .header__nav--links {
   display: flex;
+  margin: 0px;
 }
 
 .nav--items {
@@ -62,9 +66,24 @@ body {
 }
 
 .nav--items:hover {
-  background-color: #333;
+  /* background-color: #333; */
+  color: tomato;
 }
 
 .content {
   grid-column: 1 / -1;
+}
+
+.content__card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  /* box-shadow: 0 4px 8px 0 #203340 ; */
+  transition: 0.3s;
+  width: 300px;
+  text-align: center;
+  margin: 100px auto 0px auto;
+}
+
+.content__card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  /* box-shadow: 0 8px 16px 0 #203340; */
 }
