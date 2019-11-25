@@ -1,0 +1,10 @@
+@font-face {
+    src: url('fonts/AirbnbCereal-Black.ttf');
+    font-family: 'AirbnbCereal';
+    font-style: normal;
+  }
+  
+  * {
+    font-family: AirbnbCereal;
+    font-size: 20px;
+  }

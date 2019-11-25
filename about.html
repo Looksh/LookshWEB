@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <title>Looksh</title>
     <link rel="stylesheet" href="basic.css" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="allFont.css" />
+    <script type="text/javascript" src="darkmode.js"></script>
   </head>
   <body>
     <div class="container">
@@ -13,9 +14,8 @@
           <div class="header__nav--img">
             <img
               id="logo"
-              src="img/planet.png"
+              src="img/profile.jpg"
               alt="logo"
-              class="header__nav--logo"
             />
           </div>
           <div class="header__nav__menu">
@@ -32,12 +32,14 @@
         <div class="content__card">
           <img src="img/35455875.jpg" style="width: 100%">
           <div class="content__card--info">
-            <h4 style="padding: 10px 10px 10px 10px; margin: 0px">Web Programmer</h4>
+            <p style="padding: 10px 10px 10px 10px; margin: 0px;">Programmer?</p>
             <!-- <p>lookshdev@gmail.com</p> -->
           </div>
         </div>
-        <p></p>
-      </div>
+        <div class="etc">
+          <input id='dark_white' type='button' value="dark" onclick="DarkHandler(this);
+          ">
+        </div>
     </div>
   </body>
 </html>

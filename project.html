@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <title>Looksh</title>
     <link rel="stylesheet" href="basic.css" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="allFont.css" />
     <style>
-      table {
+      .food {
         position: relative;
         top: 50px;
         width: 400px;
@@ -15,29 +15,61 @@
         margin-right: auto;
       }
 
-      table,td {
+      table, td {
         border: 1px solid #333;
         text-align: center;
 }
 
-      thead,tfoot {
+      .food > thead,tfoot {
         background-color: #333;
         color: #fff;
 }
       td:hover {
         background-color: aliceblue;
+      }
 
+      .calc {
+        background-color: white;
+        top: 100px;
+        border-collapse: collapse;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      input {
+        border: none;
+        text-align: right;
+      }
+
+      input:focus {
+        outline: none;
       }
     </style>
+    <script>
+        function add(char) {
+            const display = document.getElementById('display'); 
+            display.value = display.value + char;
+        }
+        function calculate() {
+            const display = document.getElementById('display');
+            const result = eval(display.value); 
+            document.getElementById('result').value = result;
+        }
+        function reset() {
+            document.getElementById('display').value = "";
+            document.getElementById('result').value = "";
+        }
+    </script>
   </head>
   <body>
     <div class="container">
       <div class="header">
         <nav class="header__nav">
-          <div>
+          <div class="header__nav--img">
             <img
               id="logo"
-              src="img/planet.png"
+              src="img/profile.jpg"
               alt="logo"
             />
           </div>
@@ -53,13 +85,13 @@
       </div>
       <div class="content">
         <div>
-          <table>
+          <table class="food">
             <thead>
                 <tr>
                     <th colspan="3">먹고싶은 음식 리스트</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="food--items">
                 <tr>
                   <td>탕수육</td>
                   <td>치킨</td>
@@ -75,10 +107,54 @@
                   <td>얼음생맥</td>
                   <td>갈빗살</td>
                 </tr>
+                <tr>
+                  <td>소고기</td>
+                  <td>돼지고기</td>
+                  <td>오리고기</td>
+                </tr>
             </tbody>
         </table>
+        <table border="1" class="calc">
+          <caption>계산기</caption>
+          <tr>
+              <td colspan="4">
+                  <input type="text" id="display">
+              </td>
+          </tr>
+          <tr>
+              <td colspan="4">
+                  <input type="text" id="result">
+              </td>
+          </tr>
+          <tr>
+              <td colspan="3" onclick="reset()">AC</td>
+              <td onclick="add('/')">/</td>
+          </tr>
+          <tr>
+              <td onclick="add(7)">7</td>
+              <td onclick="add(8)">8</td>
+              <td onclick="add(9)">9</td>
+              <td onclick="add('*')">*</td>
+          </tr>
+          <tr>
+              <td onclick="add(4)">4</td>
+              <td onclick="add(5)">5</td>
+              <td onclick="add(6)">6</td>
+              <td onclick="add('-')">-</td>
+          </tr>
+          <tr>
+              <td onclick="add(1)">1</td>
+              <td onclick="add(2)">2</td>
+              <td onclick="add(3)">3</td>
+              <td onclick="add('+')">+</td>
+          </tr>
+          <tr>
+              <td colspan="2" onclick="add(0)">0</td>
+              <td onclick="add('.')">.</td>
+              <td onclick="calculate()">=</td>
+          </tr>
+      </table>
         </div>
-        <p></p>
       </div>
     </div>
   </body>
