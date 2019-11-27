@@ -12,34 +12,63 @@
       <div class="header">
         <nav class="header__nav">
           <div class="header__nav--img">
-            <img
-              id="logo"
-              src="img/profile.jpg"
-              alt="logo"
-            />
+            <img id="logo" src="img/profile.jpg" alt="logo" />
           </div>
           <div class="header__nav__menu">
             <ul class="header__nav--links">
               <li><a href="index.html" class="nav--items">HOME</a></li>
-              <li><a href="about.html" class="nav--items">ABOUT</a></li>
-              <li><a href="contact.html" class="nav--items">CONTACT</a></li>
+              <li><a href="#about" class="nav--items">ABOUT</a></li>
+              <li><a href="#contact">CONTACT</a></li>
               <li><a href="project.html" class="nav--items">PROJECT</a></li>
             </ul>
           </div>
         </nav>
       </div>
-      <div class="content">
-        <div class="content__card">
-          <img src="img/35455875.jpg" style="width: 100%">
-          <div class="content__card--info">
-            <p style="padding: 10px 10px 10px 10px; margin: 0px;">Programmer?</p>
-            <!-- <p>lookshdev@gmail.com</p> -->
+      <!-- nav 끝 -->
+      <div class="etc">
+        <input
+          id="dark_white"
+          type="button"
+          value="dark"
+          onclick="DarkHandler(this);
+                "
+        />
+      </div>
+      <div class="about" id="about">
+        <div class="about__card">
+          <img src="img/35455875.jpg" style="width: 100%" />
+          <div class="about__card--info">
+            <p style="padding: 10px 10px 10px 10px; margin: 0px;">
+              Programmer?
+            </p>
           </div>
         </div>
-        <div class="etc">
-          <input id='dark_white' type='button' value="dark" onclick="DarkHandler(this);
-          ">
+      </div>
+      <!-- about 끝 -->
+      <div class="contact" id="contact">
+        <div class="contact__box">
+          <h1>CONTACT</h1>
+          <div class="contact__box--email">
+            <p>lookshdev@gmail.com</p>
+          </div>
+          <div class="contact__box--sns">
+            <a
+              href="https://www.facebook.com/profile.php?id=100004470692905"
+              class="contact__box--sns-facebook"
+              ><img src="img/facebook.png"
+            /></a>
+            <a
+              href="https://www.instagram.com/moonu7.20/?hl=ko"
+              class="contact__box--sns-instagram"
+              ><img src="img/instagram.png"
+            /></a>
+            <a href="https://github.com/Looksh" class="contact__box--sns-github"
+              ><img src="img/github.png"
+            /></a>
+          </div>
         </div>
+      </div>
+      <!-- contact 끝 -->
     </div>
   </body>
 </html>
