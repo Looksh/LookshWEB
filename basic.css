@@ -1,3 +1,6 @@
+/* 모든 html css 부분 */
+
+
 a {
   text-decoration: none;
   color: inherit;
@@ -17,13 +20,23 @@ body {
   height: 60px;
 }
 
-/* .container > div:nth-child(1n) {
-  background-color: #2a2c2b;
-} */
+.content {
+  grid-column: 1 / -1;
+}
 
-/* .container > div:nth-child(2n) {
-  background-color: #69d2e7;
-} */
+/*
+*
+*
+*
+*
+*
+contact.html css 부분 
+*
+*
+*
+*
+*
+*/
 
 .container {
   height: 100%;
@@ -68,12 +81,7 @@ body {
 }
 
 .nav--items:hover {
-  /* background-color: #333; */
   color: tomato;
-}
-
-.content {
-  grid-column: 1 / -1;
 }
 
 .content__card {
@@ -103,5 +111,39 @@ body {
   cursor: pointer;
   background-color: #000;
   color: #69d2e7;
+}
+
+/*
+*
+*
+*
+*
+*
+contact.html css 부분 
+*
+*
+*
+*
+*
+*/
+
+.contact__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.contact__box--sns {
+  display: flex;
+  width: 180px;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-left: 20px; */
+} 
+
+.contact__box--sns img {
+  width: 40px;
+  height: 40px;
 }
 
