@@ -12,12 +12,30 @@ body {
   height: 1fr;
   padding: 0px;
   margin: 0px;
+  scroll-behavior: smooth;
 }
 
 #logo {
   padding: 10px;
   width: 60px;
   height: 60px;
+}
+
+#dark_white {
+  /* display: flex;  */
+  width: 150px;
+  padding: 10px;
+  border: 1px solid #000;
+  cursor: pointer;
+  background-color: #000;
+  color: #69d2e7;
+}
+
+#name {
+  width: 100px;
+  border: none;
+  background-color: #000;
+  color: #69d2e7;
 }
 
 .about,
@@ -44,11 +62,12 @@ contact.html css 부분
   display: grid;
   grid-gap: 0px;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: 80px 1000px;
+  grid-template-rows: 80px 1500px;
 }
 
 .header {
   background-color: #2a2c2b;
+  /* background-color: #000; */
   display: inline;
   position: sticky;
   box-shadow: 3px 3px 15px #374140;
@@ -74,6 +93,8 @@ contact.html css 부분
 .header__nav--links {
   display: flex;
   margin: 0px;
+  width: 450px;
+  justify-content: space-between;
 }
 
 .nav--items {
@@ -85,6 +106,13 @@ contact.html css 부분
   color: tomato;
 }
 
+.about__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
 .about__card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   /* box-shadow: 0 4px 8px 0 #203340 ; */
@@ -92,7 +120,6 @@ contact.html css 부분
   width: 300px;
   text-align: center;
   top: 0%;
-  margin: 150px auto 0px auto;
 }
 
 .about__card:hover {
@@ -104,16 +131,6 @@ contact.html css 부분
   position: fixed;
   margin-top: 150px;
   /* text-align: center; */
-}
-
-#dark_white {
-  /* display: flex;  */
-  width: 150px;
-  padding: 10px;
-  border: 1px solid #000;
-  cursor: pointer;
-  background-color: #000;
-  color: #69d2e7;
 }
 
 /*
