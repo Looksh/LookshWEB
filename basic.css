@@ -147,6 +147,10 @@ contact.html css 부분
 *
 */
 
+.contact {
+  height: 800px;
+}
+
 .contact__box {
   display: flex;
   flex-direction: column;
@@ -165,4 +169,9 @@ contact.html css 부분
 .contact__box--sns img {
   width: 40px;
   height: 40px;
+}
+
+.contact__box--sns img:hover {
+  width: 55px;
+  height: 55px;
 }

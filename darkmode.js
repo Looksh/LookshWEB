@@ -1,5 +1,5 @@
 var Body = {
-  //다크모드를 실행시키기 위한 함수
+  //화면 전체 배경색을 바꾸기 위한 함수
   setColor: function(color) {
     document.querySelector("body").style.color = color;
   },
@@ -8,14 +8,15 @@ var Body = {
   }
 };
 
-// var Card = {
-//     setColorImg:function (){
-//         document.getElementsByClassName('content__card').style.boxShadow = "5px 10px 15px #69d2e7"
-//     }
-// }
+const headerHandler = {
+  //header 배경색을 변경하기 위한 함수
+  setBackgroundColorHandler: function(color) {
+    document.getElementsByClassName("header")[0].style.backgroundColor = color;
+  }
+};
 
 var Handler = {
-  //input 변경을 위한 함수
+  //input 내부 배경색과 텍스트 색상 변경을 위한 함수
   setColorHandler: function(color) {
     document.getElementById("dark_white").style.color = color;
     document.getElementById("name").style.color = color;
@@ -33,21 +34,25 @@ function DarkHandler(self) {
     Body.setColor("#FF55A1");
     self.value = "acua";
 
-    //다크모드 변경할 때 배경과 텍스트 색상
+    //다크모드로 변경할 때 배경과 텍스트 색상
     Handler.setColorHandler("black");
     Handler.setBackgroundColorHandler("#69d2e7");
-    // Card.style.boxShadow('5px 10px 15px #69d2e7');
+    
+    headerHandler.setBackgroundColorHandler("black");
+
   } else {
     Body.setBackgroundColor("#69d2e7");
     Body.setColor("black");
     self.value = "dark";
 
-    //다크모드 변경할 때 배경과 텍스트 색상
+    //아쿠아모드 변경할 때 배경과 텍스트 색상
     Handler.setColorHandler("#69d2e7");
     Handler.setBackgroundColorHandler("black");
-    // Card.style.boxShadow('0 8px 16px 0 rgba(0,0,0,0.2)');
+    
+    headerHandler.setBackgroundColorHandler("#2a2c2b");
+
   }
-}
+};
 
 function inputName() {
   const nameValue = document.getElementById("name").value;
@@ -58,13 +63,4 @@ function inputName() {
       alert("틀렸음");
     }
   }
-}
-
-// function CardHandler(self){
-//     var target = document.getElementsByClassName('content__card');
-//     if(self.value === 'dark'){
-//         Card.style["boxShadow"]('5px 10px 15px #69d2e7');
-//     } else {
-//         Card.style["boxShadow"]('0 8px 16px 0 rgba(0,0,0,0.2)');
-//     }
-// }
+};
