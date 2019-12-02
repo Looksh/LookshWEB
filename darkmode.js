@@ -15,6 +15,13 @@ const headerHandler = {
   }
 };
 
+const tagHandler = {
+  //scrollbar 내부 배경색을 변경하기 위한 함수
+  setBackgroundColorHandler: function(color) {
+    document.getElementById("tag__css").style.backgroundColor = color;
+  }
+}
+
 var Handler = {
   //input 내부 배경색과 텍스트 색상 변경을 위한 함수
   setColorHandler: function(color) {
@@ -39,7 +46,7 @@ function DarkHandler(self) {
     Handler.setBackgroundColorHandler("#69d2e7");
     
     headerHandler.setBackgroundColorHandler("black");
-
+    tagHandler.setBackgroundColorHandler("black");
   } else {
     Body.setBackgroundColor("#69d2e7");
     Body.setColor("black");
@@ -50,7 +57,7 @@ function DarkHandler(self) {
     Handler.setBackgroundColorHandler("black");
     
     headerHandler.setBackgroundColorHandler("#2a2c2b");
-
+    tagHandler.setBackgroundColorHandler("#69d2e7");
   }
 };
 

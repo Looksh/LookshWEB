@@ -175,3 +175,65 @@ contact.html css 부분
   width: 55px;
   height: 55px;
 }
+
+/*
+*
+*
+*
+*
+*
+class tag 부분
+*
+*
+*
+*
+*
+*/
+
+.tag__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tag__box h1 {
+  margin: 0;
+}
+
+.tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tag:hover {
+  overflow: auto;
+}
+
+.tag::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+}
+
+.tag__css {
+  display: flex;
+  background-color: #69d2e7;
+  justify-content: space-between;
+  flex-basis: 100px;
+  flex-wrap: wrap;
+  width: 1007px;
+  height: 600px;
+
+}
+
+.tag__css--recommend {
+  background-color: aliceblue;
+  padding: 15px;
+  margin: 0px 15px 50px 15px;
+  width: 250px;
+  height: 300px;
+}
